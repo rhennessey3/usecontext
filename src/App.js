@@ -6,8 +6,10 @@ import Button from "./Button"
 function App() {
   return (
     <div>
-      <Header />
-      <Button />
+      <ThemeContextProvider>
+        <Header />
+        <Button />
+      </ThemeContextProvider>
     </div>
   )
 }
